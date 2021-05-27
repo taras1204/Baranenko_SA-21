@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lviv&Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section class="main-section basic">
+  <video autoplay loop playsinline muted poster="img/header-video.png">
+    <source src="https://www.dropbox.com/s/wndh6oxyk6gbp5g/header-video.mp4?raw=1">
+  </video>
+  <header>
+    <div class="container wide">
+      <a href="/">
+        <img class="logo" src="img/logo.svg" alt="Lviv & Coffee">
+      </a>
+      <div class="menu-container">
+        <label for="btn">
+          <img src="img/burger.svg" class="icon"/>
+        </label>
+        <input id="btn" type="checkbox">
+        <nav class="top-nav">
+          <a href="#contact">
+            Контакти
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="container wide">
+    <div class="heading">
+      Знайди свою найкращу каву у Львові
+    </div>
+    <nav class="main-nav">
+      <a href="#places" class="button">Кав’ярні</a>
+      <a href="#gallery" class="button">Галерея</a>
+      <a href="#story" class="button">Історія кави<br/>у Львові</a>
+    </nav>
+  </div>
+  <div class="socials">
+    <div class="container wide">
+      <div>
+        <div class="description">соціальні мережі</div>
+        <div>
+          <a href="https://www.instagram.com/_tarasbar_/?hl=uk" target="_blank">
+            <img src="img/instagram.svg" class="social-service instagram" alt="Instagram"/>
+          </a>
+          <a href="https://t.me/lvivandcoffee" target="_blank">
+            <img src="img/telegram.svg" class="social-service telegram" alt="Telegram"/>
+          </a>
+          <a href="https://www.youtube.com/channel/UC1r2G_BHu8zIbia9r5OF4nw" target="_blank">
+            <img src="img/youtube.svg" class="social-service youtube" alt="YouTube"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="places" class="featured-section places-section">
+  <div class="container slide reversed">
+    <img src="img/slide1.jpeg">
+    <div class="description">
+      <h1>Перегляньте топ-15 місць Львова</h1>
+      <p>
+        <button class="inverted rounded">Жми сюди</button>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="featured-section gallery-section">
+  <div class="container slide">
+    <img src="img/slide2.jpeg">
+    <div class="description">
+      <h1>Архітектура кав’ярень</h1>
+      <p>
+        <button class="inverted rounded">Дивитись усі</button>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="featured-section story-section">
+  <div class="container slide reversed">
+    <img src="img/slide3.jpeg">
+    <div class="description">
+      <p>Історія “Кави зі Львова“ починається з далекого 1829 року. Саме тоді у місті Лева відкрилась перша кав'ярня,
+        яка завдячує своїй появі видатній постаті – Юрію Кульчицькому, а саме, його героїчному вчинку, який кардинально
+        змінив подальше життя всієї Європи.</p>
+      <p>
+        <button class="inverted rounded">Читати далі</button>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="price" class="featured-section price-section">
+  <div class="container slide">
+    <div class="media">
+      <table border="0">
+        <tr><td class="price-value">Безкоштовно</td></tr>
+        <tr><td class="price-decs">Спробуйте на 1 місяць</td></tr>
+        <tr><td><button>Підписатися</button></td></tr>
+      </table>
+      <table>
+        <tr><td class="price-value">5.99$</td></tr>
+        <tr><td class="price-decs">Надає усі послуги сайту на місяць</td></tr>
+        <tr><td><button>Підписатися</button></td></tr>
+      </table>
+      <table>
+        <tr><td class="price-value">22.99$</td></tr>
+        <tr><td class="price-decs">Надає усі послуги сайту на рік </td></tr>
+        <tr><td><button>Підписатися</button></td></tr>
+      </table>
+    </div>
+    <div class="description">
+      <h1>Підпишись !</h1>
+      <p>Обери свою категорію та отримуй повноцінний доступ до сайту!</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="featured-section contact-section">
+  <div class="container slide reversed">
+    <form class="media" action="#">
+      <fieldset>
+        <label>Ім’я та прізвище<span class="required">*</span></label>
+        <input type="text"/>
+        <label>Ваш E-mail<span class="required">*</span></label>
+        <input type="email"/>
+        <label>Телефон<span class="required">*</span></label>
+        <input type="tel"/>
+        <label>Ваше повідомлення<span class="required">*</span></label>
+        <textarea rows="4"></textarea>
+      </fieldset>
+      <div class="actions">
+        <button type="submit">Відправити</button>
+      </div>
+    </form>
+    <div class="description">
+      <h1>Зв’яжіться з нами!</h1>
+      <p>Якщо бажаєте дізнатись більше, заповніть контактну форму та відправте нам!</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container wide">
+    <a href="/">
+      <img class="logo" src="img/footer-logo.svg" alt="Lviv & Coffee">
+    </a>
+    <nav>
+      <a class="contacts-link">
+        контакти
+      </a>
+      <span>+380970000001</span>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
