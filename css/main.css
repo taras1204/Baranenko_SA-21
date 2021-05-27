@@ -1,0 +1,498 @@
+html {
+  color: #222222;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  position: relative;
+  padding: 1em 0;
+}
+
+header .logo {
+  height: 20px;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .menu-container {
+}
+
+header .menu-container img {
+  height: 1.4em;
+  position: relative;
+  z-index: 20;
+}
+
+header .menu-container input {
+  height: 1px;
+  width: 1px;
+  visibility: hidden;
+}
+
+header .menu-container .top-nav {
+  position: absolute;
+  background-color: rgba(225,225,225,0.9);
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  transition: all 0.3s;
+  height: 0;
+  padding: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+header .menu-container input:checked ~ .top-nav {
+  top: 4em;
+  padding: 1em 0;
+  height: auto;
+}
+
+header .menu-container .top-nav a {
+  color: #222222;
+  text-decoration: none;
+  font-size: 1.8em;
+  text-align: center;
+  padding: 1em 0;
+  display: block;
+}
+
+section.basic {
+  height: 100vh;
+}
+footer {
+  position: relative;
+  padding: 2em 0;
+  background-color: white;
+}
+
+footer > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .logo {
+  height: 20px;
+}
+
+footer nav {
+  display: flex;
+}
+
+.main-section {
+  /*background-image: url("../img/home-bg.jpeg");*/
+  /*background-size: cover;*/
+  /*background-position: center;*/
+  /*position: relative;*/
+}
+
+.main-section > video {
+  position: fixed;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+/*.main-section:before {*/
+/*  content: ' ';*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100vh;*/
+/*  background-color: rgba(0,0,0,0.25);*/
+/*}*/
+
+.main-section > * {
+  position: relative;
+}
+
+.main-section .heading {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #E5DCA1;
+  text-align: center;
+  padding-top: 9vh;
+}
+
+.main-section .main-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 0.8em;
+  padding-top: 2em;
+  max-width: 12em;
+  position: relative;
+  z-index: 1
+}
+
+.main-section .main-nav .button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.2;
+  border-radius: 0.5em;
+  padding: 0.6em 1.5em;
+  margin-bottom: 1em;
+  background-color: #E5DCA1;
+  text-decoration: none;
+  text-align: center;
+  color: #222222;
+  box-shadow: 0 0.2em 0.6em -0.4em #000000;
+}
+
+.main-section .socials {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 5vh;
+  color: #E5DCA1;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.main-section .socials > .container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-section .socials a:not(:first-child) {
+  margin-left: 1em;
+}
+
+.main-section .socials .description {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+.main-section .socials img {
+  height: 2em;
+}
+
+.featured-section {
+  position: relative;
+  background-color: white;
+}
+
+.featured-section:before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.featured-section > * {
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 0;
+}
+
+.slide > img,
+.slide > .media {
+  width: 60%;
+  border-radius: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide .description {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.slide button {
+  padding: 0.6em 1.4em;
+  font-size: 1.4em;
+  font-weight: 400;
+  border-radius: 1.6em;
+  background: transparent;
+  border: 1px solid #F2A42D;
+  color: #F2A42D;
+  outline: none;
+  cursor: pointer;
+  transition: all 100ms;
+}
+
+.slide button:hover {
+  color: white;
+  background: #F2A42D;
+}
+
+.slide button:active {
+  color: white;
+  background: #dc9830;
+}
+
+.places-section:before {
+  background-image: url("../img/places-bg.jpeg");
+}
+
+.gallery-section:before {
+  background-image: url("../img/gallery-bg.jpeg");
+}
+
+.story-section:before {
+  background-image: url("../img/story-bg.jpeg");
+}
+
+.price-section:before {
+  background-image: url("../img/price-bg.jpeg");
+}
+
+.contact-section:before {
+  background-image: url("../img/contact-bg.jpeg");
+}
+
+.price-section .media {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.price-section .media table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: hidden;
+}
+.price-section .media table td {
+  text-align: center;
+}
+
+.price-section .media > * {
+  width: 29%;
+  margin: 0 2%;
+  font-size: 1.1em;
+  border-radius: 0.8em;
+  background-color: white;
+}
+
+.price-section .media .price-value {
+  background-color: #6258D9;
+  border-radius: 0.8em;
+  padding: 0.5em;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: default;
+}
+
+.price-section .media .price-decs {
+  height: 10em;
+  font-size: 0.9em;
+  cursor: default;
+}
+
+.price-section .media button {
+  font-size: 0.8em;
+  margin: 0.8em;
+
+}
+
+.contact-section form.media {
+  width: 70%;
+}
+
+.contact-section form fieldset label {
+  margin-bottom: 0.4em;
+  display: block;
+}
+
+.contact-section form fieldset input,
+.contact-section form fieldset textarea {
+  width: 100%;
+  border-radius: 1.5em;
+  border: 0;
+  outline: none;
+  padding: 0.2em 1em;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+
+.contact-section form fieldset input {
+  height: 2.5em;
+}
+
+.contact-section form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-section form textarea {
+  resize: vertical;
+  min-height: 2.5em;
+  max-height: 10em;
+}
+
+.contact-section form .required {
+  color: red;
+  margin-left: 0.2em;
+}
+
+.contact-section form .actions {
+  text-align: center;
+}
+
+.contact-section form .actions button[type=submit] {
+  font-size: 1em;
+}
+
+.contacts-link {
+  color: #222222;
+  cursor: pointer;
+}
+
+.contacts-link ~ span {
+  position: absolute;
+  left: 50%;
+  font-size: 0.1em;
+  transform: translateX(-50%);
+  padding: 1em 2em;
+  transition: all 0.5s;
+  opacity: 0;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 0 0.2em 0.6em -0.4em #000000;
+  border-radius: 0.5em;
+}
+
+.contacts-link:hover ~ span {
+  opacity: 1;
+  bottom: 40vh;
+  font-size: 2em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: calc(100% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: calc(100% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  header .menu-container label,
+  header .menu-container input {
+    display: none;
+  }
+
+  header .menu-container .top-nav {
+    position: static;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  header .menu-container .top-nav a {
+    font-size: 1.3em;
+    padding: 0;
+    color: #E5DCA1;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container.wide {
+    width: calc(100% - 3em);
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  .main-section .main-nav {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .main-section .socials > .container {
+    justify-content: flex-end;
+  }
+
+  .slide {
+    flex-direction: row;
+    padding: 7em 0;
+  }
+
+  .slide.reversed {
+    flex-direction: row-reverse;
+  }
+
+  .slide > img,
+  .slide > .media {
+    margin-right: 3em;
+  }
+
+  .slide.reversed > img,
+  .slide.reversed > .media {
+    margin-left: 3em;
+    margin-right: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container.wide {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-section .heading {
+    font-size: 2.5em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+  .container.wide {
+    width: 1160px;
+  }
+
+  .main-section .heading {
+    font-size: 2.8em;
+  }
+
+}
